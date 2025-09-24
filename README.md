@@ -1,16 +1,119 @@
-<<<<<<< HEAD
-# React + Vite
+📊 Calculadora de IMC
+Uma aplicação web moderna e responsiva para calcular o Índice de Massa Corporal (IMC), desenvolvida com React e Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Funcionalidades
+Cálculo preciso do IMC baseado em peso e altura
 
-Currently, two official plugins are available:
+Classificação automática dos resultados segundo padrões da OMS:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Abaixo do peso (< 18.5)
 
-## Expanding the ESLint configuration
+Peso normal (18.5 - 24.9)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Calculadora_imc
->>>>>>> 22ffb4289c192a8060296b452ee257edf75ed4a2
+Sobrepeso (25.0 - 29.9)
+
+Obesidade grau I (30.0 - 34.9)
+
+Obesidade grau II (35.0 - 39.9)
+
+Obesidade grau III (≥ 40.0)
+
+Interface responsiva que se adapta a diferentes tamanhos de tela
+
+Design moderno com cores indicativas para cada faixa de IMC
+
+Validação de formulário com campos obrigatórios
+
+🛠️ Tecnologias Utilizadas
+React 19 - Biblioteca JavaScript para interfaces de usuário
+
+Vite - Build tool moderna e rápida
+
+CSS Modules - Estilização com escopo local
+
+ESLint - Linting e padronização de código
+
+📱 Design Responsivo
+A aplicação conta com breakpoints otimizados para:
+
+Desktop (> 768px)
+
+Tablet (768px)
+
+Mobile (480px)
+
+Mobile pequeno (320px)
+
+🎨 Interface
+Layout em grid com duas colunas no desktop
+
+Formulário intuitivo com campos para peso e altura
+
+Resultado visual com cores diferenciadas por categoria
+
+Imagem ilustrativa para melhor experiência do usuário
+
+🚀 Como Executar
+Clone o repositório:
+
+git clone [url-do-repositorio]
+cd calculadora_imc/projeto-react
+
+Copy
+
+Insert at cursor
+bash
+Instale as dependências:
+
+npm install
+
+Copy
+
+Insert at cursor
+bash
+Execute o projeto em modo de desenvolvimento:
+
+npm run dev
+
+Copy
+
+Insert at cursor
+bash
+Acesse http://localhost:5173 no seu navegador
+
+📦 Scripts Disponíveis
+npm run dev - Inicia o servidor de desenvolvimento
+
+npm run build - Gera a build de produção
+
+npm run preview - Visualiza a build de produção
+
+npm run lint - Executa o linting do código
+
+🎯 Estrutura do Projeto
+projeto-react/
+├── src/
+│   ├── Components/
+│   │   ├── img/
+│   │   ├── Calculadora.module.css
+│   │   └── index.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── public/
+└── package.json
+
+Copy
+
+Insert at cursor
+💡 Características Técnicas
+Componente funcional com React Hooks (useState)
+
+CSS Modules para estilização isolada
+
+Validação de entrada numérica
+
+Cálculo matemático preciso com formatação decimal
+
+Renderização condicional baseada nos resultados
+
+Projeto desenvolvido como parte dos estudos em React e desenvolvimento web moderno.
