@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Styles from './Calculadora.module.css';
 import img from './img/saudavel.png';
 
-function CalculadoraImc(params) {
+function CalculadoraImc() {
 
 
 const [peso, setPeso] = useState('');
