@@ -4,14 +4,20 @@ import img from './img/saudavel.png';
 
 function CalculadoraImc(params) {
 
+    let alturaEValida = 0 ;
+
 const [peso, setPeso] = useState('');
 const [altura, setAltura] = useState('');
 const [Resultado, SetResultado] = useState('');
 
-
+ 
 function yyy(e) {
     e.preventDefault()
+    calcular()
+    
 }
+
+
 
 function calcular() {
     let resultado = parseFloat(peso) / (parseFloat(altura) * parseFloat(altura));
@@ -21,8 +27,14 @@ function calcular() {
 
 function atualizarArea() {
     let imc = parseFloat(Resultado);
+
+    if (!altura.includes('.') ) {
+        return(
+            <p className={Styles.error}>O campo é invalido !!!</p>
+        )
+    }
     
-    if (imc < 18.5) {
+    else if (imc < 18.5) {
         return(
             <p>Abaixo do peso</p>
         )
@@ -74,14 +86,14 @@ function atualizarArea() {
 
                 <div className={Styles.tamplete2}>
                     <form onSubmit={yyy}>
-                        <h2>Calcule seu imc</h2>
                         <input value={peso} onChange={event => setPeso(event.target.value)} type="number" placeholder='Digite seu peso' required/>
                         <input value={altura} onChange={event => setAltura(event.target.value)} type="number" placeholder='Digite sua altura' required/>
-                        <button onClick={calcular} type="submit">Calcular</button>
+                        <button type="submit">Calcular</button>
                     </form>
+
                     
                     <div className={Styles.tamplete2Cont}>
-                        <div className={Styles.tamplete2ContText}>
+                        <div className={Styles.tamplete2ContText}>       
                             
                         {Resultado && (
                             <>
@@ -89,6 +101,7 @@ function atualizarArea() {
                           <span className={Resultado < 18.5 ? Styles.baixo : Resultado <= 24.9 ? Styles.normal : Resultado <= 29.9 ? Styles.preocupante : Styles.preocupante}>{atualizarArea()}</span>
                           </>
                         )}
+                        
                         </div>
                     </div>
                 </div>
