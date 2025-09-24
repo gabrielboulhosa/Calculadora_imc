@@ -86,7 +86,7 @@ function atualizarArea() {
                 <div className={Styles.tamplete2}>
                     <form onSubmit={yyy}>
                         <input value={peso} onChange={event => setPeso(event.target.value)} type="number" placeholder='Digite seu peso' required/>
-                        <input value={altura} onChange={event => setAltura(event.target.value)} type="number" placeholder='Digite sua altura' required/>
+                        <input value={altura} onChange={event => setAltura(event.target.value)} type="number" placeholder='Digite sua altura(ex: 1.80)' required/>
                         <button type="submit">Calcular</button>
                     </form>
 
