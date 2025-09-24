@@ -4,7 +4,6 @@ import img from './img/saudavel.png';
 
 function CalculadoraImc(params) {
 
-    let alturaEValida = 0 ;
 
 const [peso, setPeso] = useState('');
 const [altura, setAltura] = useState('');
